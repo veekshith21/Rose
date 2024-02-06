@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <title>rose day</title>
+    <link rel="stylesheet" href="rose.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hey Sreeja!!</h1>
+        </header>
+        <div class="rose-container">
+            <img src="image-removebg-preview (1).png" alt="Rose" class="rose-image" id="rose">
+            <div class="message" id="message">
+                <p>Hehe! I just wanted to see a smile on your face -- Happy Rose Day! 🌹</p>
+            </div>
+        </div>
+        <p class="instruction">Tap on rose - edho ala time pass ki</p>
+    </div>
+    <script>
+        const rose = document.getElementById('rose');
+        const message = document.getElementById('message');
+
+        rose.addEventListener('click', () => {
+            if (message.style.display === 'block') {
+                message.style.display = 'none';
+                rose.classList.remove('rose-animation');
+        }   else {
+                message.style.display = 'block';
+                rose.classList.add('rose-animation');
+    }
+});
+    </script>
+</body>
+</html>
